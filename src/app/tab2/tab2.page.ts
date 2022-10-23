@@ -1,3 +1,4 @@
+import { TasksService } from './../services/tasks.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+
+  public tasks: string[];
+  public task: string;
+
+  constructor(private taskService:TasksService) {
+   this.tasks = this.taskService.getTasksC();
+   this.task = '';
+  }
+
+  public removeTask(pos:number) {
+    this.taskService.removeTask(pos);
+    this.tasks = this.taskService.getTasks();
+  }
 
 }
