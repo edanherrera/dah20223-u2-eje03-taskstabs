@@ -27,4 +27,7 @@ export class TasksService {
     this.tasksC.push(this.tasks[pos]);
     this.tasks.splice(pos, 1);
   }
+  public removeTaskC(pos:number){
+    this.tasksC.splice(pos, 1);
+  }
 }

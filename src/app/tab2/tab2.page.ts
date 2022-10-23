@@ -18,8 +18,8 @@ export class Tab2Page {
   }
 
   public removeTask(pos:number) {
-    this.taskService.removeTask(pos);
-    this.tasks = this.taskService.getTasks();
+    this.taskService.removeTaskC(pos);
+    this.tasks = this.taskService.getTasksC();
   }
 
 }
