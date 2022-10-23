@@ -1,0 +1,7 @@
+{
+  "name": "dah20223-u2-eje03-taskstabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
