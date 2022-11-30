@@ -14,7 +14,7 @@ export class Tab2Page {
   public task: string;
 
   constructor(private taskService:TasksService) {
-    this.taskService.getTasks().subscribe(res =>{
+    this.taskService.getTasksC().subscribe(res =>{
       this.tasks = res;
       console.log(this.tasks);
     });
