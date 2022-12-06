@@ -15,7 +15,7 @@ import {AngularFirestore} from '@angular/fire/compat/firestore';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,AngularFireModule.initializeApp(environment.firebaseConfig),AngularFireDatabaseModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },AngularFirestore],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},AngularFirestore,],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

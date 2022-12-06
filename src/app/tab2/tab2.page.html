@@ -14,8 +14,13 @@
           <ion-item>
             <ion-label>{{item.task}}</ion-label>
           </ion-item>
-          <ion-item-options side="end" (ionSwipe)="removeTask(i)">
-            <ion-item-option expandable color="warning">
+          <ion-item-options side="end" (ionSwipe)="removeTask(item.id)">
+            <ion-item-option expandable color="danger">
+              <ion-icon name="trash-outline"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+          <ion-item-options side="start" (ionSwipe)="addTask(item,item.id)">
+            <ion-item-option expandable color="primary">
               <ion-icon name="arrow-undo-outline"></ion-icon>
             </ion-item-option>
           </ion-item-options>
